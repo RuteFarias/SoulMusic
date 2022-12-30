@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+   
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background: var(--space-crayola);
+
+}
+/*pseudo-classe - mais específica que a tag html, mãe de todos os elementos da nossa página, crio variáveis para serem utilizadas no meu css*/
+:root{
+    --space-crayola: #2E3532;
+    --dark-cyan: #2D898B;
+    --bone: #DDD8C4;
+    --pansy-purple: #7E1946;
+    --lilac-luster: #B08EA2;
+}
+
+.background{
+    background: var(--space-crayola);
+}
+/*classes reutilizáveis - delimitar o conteúdo do site*/
+.container{
+    max-width: 1440px;
+    padding: 0 5%;
+    margin: 0 auto;
+
+}
+section, footer{
+    padding: 2.7rem 0;
+
+}
+/*classes do site*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+/* -- Menu -- */
+.logo img{
+    width: 30%;
+}
+
+.ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.ul li{
+    margin: 0 35px;
+    font-size: 20px;
+}
+
+.ul li a{
+    color: var(--bone);
+}
+.menu-icon img{
+    width: 30px;
+    
+}
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+
+}
+/* -- End Menu Icon -- */
+
+
+/* -- Responsive -- */
+@media(max-width: 720px){
+    .menu-icon{
+        display: block;
+    
+    }
+    .ul{
+        position: fixed;
+        background: var(--space-crayola);
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: 100%;
+        transition: 0.3s;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .ul li{
+        font-size: 20px;
+        margin: 20px 0;
+        
+    }
+    .ul.ativo{
+        left: 0;
+    }
+   
+    .main-banner{
+        width: 100%;
+    }
+    .main-text{
+        width: 100%;
+        text-align: center;
+    }
+    .main-text h1{
+        font-size: 10px;
+    }
+    .resultados .container{
+        flex-direction: column;
+    }
+    .resultados .resultados-text,
+    .resultados .resultados-numero{
+        width: 100%;
+        text-align: center;
+    }
+    .resultados-numero{
+        margin-top: 30px;
+    } 
+    
+    .diferenciais .container{
+        flex-direction: column;
+
+    }
+    .diferenciais .container .card{
+        width: 100%;
+        margin-top: 2.7rem;
+    }
+    footer .container{
+        flex-direction: column;
+
+    }
+    footer .container ul{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+   
+    
+}
+/* -- End Menu Icon -- */
+/* -- End Menu -- */
+
+/* -- Main -- */
+
+.main-banner{
+    background: url('../images/banner3.1.png') no-repeat center;
+    width: 100%;
+    height: 600px;
+}
+
+.main-text{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15em;
+    padding-bottom: 0;
+    text-align: center;
+
+}
+
+.main-text h1{
+    overflow: hidden;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: normal;
+    color: var(--bone);
+    font-size: 50px;
+    
+
+    
+}
+.main-text h1:after{  
+    display: inline-block;
+    background-color: var(--bone);
+    margin-left: 2px;
+    height: 25px;
+    width: 4px;
+   
+}
+
+/* -- End Main -- */
+
+/* -- Section Results -- */
+.resultados{
+    background: var(--dark-cyan);
+}
+
+.resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.resultados .resultados-text{
+    color: var(--bone);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 50%;
+
+}
+.resultados .resultados-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bone);
+}
+.resultados .resultados-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+    
+}
+.resultados .resultados-numero span{
+    font-size: 22px;
+    font-weight: 600;
+    
+}
+/* -- Section Responsive -- */
+@media(max-width: 440px){
+    .main-text h1{
+        font-size: 30px;
+    }
+    .resultados .resultados-numero{
+        flex-direction: column;
+    }
+   
+}
+/* -- End Section Results -- */
+/* -- Diferenciais -- */
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    background: var(--space-crayola);
+}
+
+.diferenciais .card{
+    width: 30%;
+    padding: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: var(--bone);
+    transition: 0.3s;
+}
+.diferenciais .card:hover{
+    background: var(--lilac-luster);
+    box-shadow: 0px 3px 22px 8px #B08EA2;
+}
+
+.diferenciais .card img{
+    width: 60px;
+    
+}
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+    color: var(--space-crayola);
+
+
+}
+/* -- End Diferenciais -- */
+
+/* -- Marca Soul Music --*/
+.fundo-logo img{
+    width: 50%;
+    display: flex;
+    margin: auto;
+   
+
+    
+}
+
+
+
+
+/* -- End Marca Soul Music --*/
+
+/* -- Footer -- */
+footer{
+    background: var(--pansy-purple);
+}
+
+footer .container{
+    display: flex;
+    color: var(--bone);
+}
+footer .container ul{
+    width: 30%;
+}
+
+footer .container h3{
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+footer .container .redes-sociais img{
+    margin-right: 10px;
+
+}
+footer .container ul > p{
+    margin-bottom: 40px;
+    
+
+}
+footer .container li{
+    margin: 10px 0;
+    list-style: none;
+
+}
+
+footer .container a{
+    color: var(--bone);
+}
+
+footer .container img.logo{
+    width: 30%;
+}
+
+/* -- End Footer -- */
