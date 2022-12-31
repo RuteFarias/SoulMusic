@@ -28,7 +28,7 @@ body{
 }
 /*classes reutilizáveis - delimitar o conteúdo do site*/
 .container{
-    max-width: 1440px;
+    max-width: 2000px;
     padding: 0 5%;
     margin: 0 auto;
 
@@ -303,6 +303,7 @@ footer .container h3{
 
 footer .container .redes-sociais img{
     margin-right: 10px;
+    width: 40px;
 
 }
 footer .container ul > p{
