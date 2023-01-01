@@ -209,3 +209,55 @@ main .container{
 
 
 /* -- End Main -- */
+.plans .container-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    background: var(--space-crayola);
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.plans .card{
+    width: 22%;
+    height: 350px;
+    padding: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background: var(--bone);
+    margin: 20px;
+
+}
+.plans .card img{
+    width: 100%;
+    min-height: 35vh;
+    padding: 10px;
+    border-radius: 30px;
+
+    
+    
+}
+.card:hover .content{
+    opacity: 1;
+
+
+}
+
+.card .content {
+    padding: 10px;
+    text-align:center;
+    color:white;
+    opacity:0;
+    transition: opacity .2s linear;
+    background-color:rgba(0,0,0,.7);
+    
+    
+}
+
+.plans h2{
+    color: #2E3532;
+    text-align: center;
+}
+
+/*-- Cards*/
