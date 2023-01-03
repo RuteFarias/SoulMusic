@@ -250,9 +250,12 @@ main .container{
     color:white;
     opacity:0;
     transition: opacity .2s linear;
-    background-color:rgba(0,0,0,.7);
+    background-color: var(--space-crayola);
     
-    
+}
+.card .content p{
+    text-align: left;
+    padding: 10px;
 }
 
 .plans h2{
