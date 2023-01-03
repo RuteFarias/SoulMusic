@@ -117,6 +117,7 @@ nav{
     .plans .card{
         width: 100%;
         margin-top: 2.7rem;
+        
     }
 }
 
@@ -172,8 +173,10 @@ main .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
     background: var(--pansy-purple);
+    width: 100%;
+    height: 600px;
+
 }
 .main-text{
     width: 50%;
@@ -225,16 +228,18 @@ main .container{
     width: 100%;
     min-height: 100vh;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .plans .card{
-    width: 22%;
-    height: 350px;
+    width: 25%;
+    height: 400px;
     padding: 30px;
     border-radius: 15px;
     cursor: pointer;
-    background: var(--bone);
+    background:#DDD8C4;
     margin: 20px;
+    
 
 }
 .plans .card img{

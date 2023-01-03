@@ -32,7 +32,7 @@ body{
     margin: 0 auto;
 
 }
-section, footer{
+footer{
     padding: 2.7rem 0;
 
 }
@@ -75,6 +75,42 @@ nav{
 
 }
 /* -- End Menu Icon -- */
+/* -- Section About -- */
+
+
+.about .container{
+    display: flex;
+    align-items: center;
+    background: var(--bone);
+
+}
+.about .soulmusic-img{
+    width: 50%;
+
+}
+.about .soulmusic-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about .soulmusic-text{
+    width: 50%;
+    padding-left: 90px;
+}
+
+.about .soulmusic-text h2{
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+.about .soulmusic-text p{
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+
+/* -- End Section About -- */
 
 /* -- Responsive -- */
 @media(max-width: 720px){
@@ -110,23 +146,21 @@ nav{
         width: 100%;
         margin-bottom: 30px;
     }
+    .about .container{
+        flex-direction: column;
+    }
+    .about .soulmusic-text, 
+    .about .soulmusic-img{
+        width: 100%;
+        text-align: center;
+    }
+    .about .soulmusic-text{
+        padding-left: 0;
+    }
+
 }
-/* -- About*/
-.about{
-    background: var(--bone);
-    max-width: 1400px;
-    padding: 0 5% 5%;
-    margin: 50px auto;
-    font-size: x-large;
-    border-radius: 15px 15px 15px 15px;
-}
-.about h2{
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-/*End About*/
+
+
 /* -- Footer -- */
 footer{
     background: var(--pansy-purple);
