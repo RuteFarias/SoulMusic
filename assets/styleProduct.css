@@ -110,6 +110,14 @@ nav{
         width: 100%;
         margin-bottom: 30px;
     }
+    .plans .container-cards{
+        flex-direction: column;
+
+    }
+    .plans .card{
+        width: 100%;
+        margin-top: 2.7rem;
+    }
 }
 
 
